@@ -86,22 +86,37 @@ export default function About() {
             </div>
           </div>
 
-          {/* Image Column */}
+          {/* Aesthetic Decorative Branding Column (No actual photos, pure high-end vector design) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-none overflow-hidden shadow-2xl border-2 border-dark-800">
-              <img
-                src="/dose_gym_training_1782245477926.jpg"
-                alt="كابتن محمود المصري يدرب في دوز جيم"
-                className="w-full object-cover rounded-none transform hover:scale-102 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
+            <div className="relative rounded-none overflow-hidden shadow-2xl border-2 border-luxury-gold/30 bg-gradient-to-br from-dark-900 to-black p-12 flex flex-col justify-between aspect-[1.1/1] sm:aspect-[1.5/1] lg:aspect-[4/5]">
+              {/* Abstract decorative grid pattern */}
+              <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+              
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div>
+                  <span className="text-luxury-gold text-xs font-black tracking-widest uppercase block mb-2">DOSE GYM CONCEPT</span>
+                  <h4 className="text-3xl font-black text-white font-display italic tracking-tight">قوة حقيقية.</h4>
+                  <h4 className="text-3xl font-black text-luxury-gold font-display italic tracking-tight">نتائج واقعية.</h4>
+                </div>
+
+                <div className="my-auto flex items-center justify-center">
+                  <Dumbbell className="h-28 w-28 text-luxury-gold/15 transform -rotate-45" />
+                </div>
+
+                <div className="border-t border-dark-800 pt-4">
+                  <span className="text-xs text-dark-300 font-bold leading-relaxed block">
+                    صالة مجهزة بالكامل لخدمة أبطال بولاق الدكرور تحت الإشراف الحقيقي المباشر لكابتن محمود المصري.
+                  </span>
+                </div>
+              </div>
+
               {/* Gold overlay elements */}
-              <div className="absolute inset-0 border-2 border-luxury-gold/20 rounded-none pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 border border-luxury-gold/10 rounded-none pointer-events-none" />
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-luxury-gold/5 rounded-full blur-[40px] pointer-events-none" />
             </div>
 
             {/* Floating Banner */}
-            <div className="absolute -bottom-6 -right-6 bg-black border-2 border-luxury-gold rounded-none p-5 shadow-2xl flex items-center gap-4 max-w-xs">
+            <div className="absolute -bottom-6 -right-6 bg-black border-2 border-luxury-gold rounded-none p-5 shadow-2xl flex items-center gap-4 max-w-xs z-20">
               <div className="bg-luxury-gold p-3 rounded-none text-black font-black text-xl italic border border-black flex-shrink-0">
                 ١٠٠٪
               </div>

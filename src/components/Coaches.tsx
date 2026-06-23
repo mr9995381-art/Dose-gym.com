@@ -43,15 +43,21 @@ export default function Coaches() {
         <div className="max-w-4xl mx-auto bg-dark-900 border-2 border-dark-800 hover:border-luxury-gold rounded-none overflow-hidden transition-all duration-300">
           <div className="grid md:grid-cols-12 gap-0">
             
-            {/* Image section */}
-            <div className="md:col-span-5 relative overflow-hidden aspect-[4/5] md:aspect-auto">
-              <img
-                src={coach.image}
-                alt={coach.name}
-                className="w-full h-full object-cover filter brightness-90 group-hover:scale-102 transition-transform duration-300"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-dark-900 via-transparent to-transparent opacity-90" />
+            {/* Aesthetic Decorative Coach Panel (No actual photos, pure high-end vector branding) */}
+            <div className="md:col-span-5 bg-black border-l-2 border-dark-800/50 flex flex-col items-center justify-center p-8 text-center relative overflow-hidden aspect-[4/5] md:aspect-auto">
+              <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+              <div className="relative z-10 flex flex-col items-center">
+                <div className="w-20 h-20 bg-dark-900 border-2 border-luxury-gold flex items-center justify-center rounded-none shadow-[0_0_15px_rgba(212,175,55,0.15)] mb-4">
+                  <Award className="h-10 w-10 text-luxury-gold" />
+                </div>
+                <span className="text-luxury-gold font-display font-black text-2xl tracking-tighter italic uppercase">DOSE GYM</span>
+                <span className="text-white font-black text-sm tracking-wider uppercase mt-1">المشرف الرئيسي للمقر</span>
+                <div className="w-12 h-1 bg-luxury-gold mt-4" />
+                <p className="text-dark-300 text-xs mt-3 leading-relaxed max-w-[200px] font-medium">
+                  إشراف رياضي معتمد وتصميم برامج مخصصة
+                </p>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-luxury-gold/5 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Coach Information section */}

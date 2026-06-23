@@ -60,13 +60,8 @@ export default function Header() {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <div className="relative w-12 h-12 flex-shrink-0">
-              <img
-                src="/dose_gym_logo_1782248414630.jpg"
-                alt="Dose Gym Logo"
-                className="w-full h-full object-cover rounded-full border-2 border-luxury-gold shadow-[0_0_15px_rgba(212,175,55,0.2)]"
-                referrerPolicy="no-referrer"
-              />
+            <div className="bg-luxury-gold p-2 rounded-none border-2 border-black flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <Dumbbell className="h-6 w-6 text-black transform -rotate-45" />
             </div>
             <div className="flex flex-col">
               <span className="font-display text-2xl font-black tracking-tighter text-luxury-gold italic">

@@ -181,13 +181,8 @@ export default function Footer() {
           
           {/* Logo brand */}
           <div className="flex items-center gap-3 font-bold">
-            <div className="w-10 h-10 rounded-full border-2 border-luxury-gold overflow-hidden">
-              <img
-                src="/dose_gym_logo_1782248414630.jpg"
-                alt="Dose Gym Logo"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
+            <div className="bg-luxury-gold text-black p-2 rounded-none border border-black">
+              <Dumbbell className="h-5 w-5 transform -rotate-45" />
             </div>
             <span className="font-display text-xl font-black text-white italic tracking-tighter">
               DOSE<span className="text-luxury-gold">GYM</span>

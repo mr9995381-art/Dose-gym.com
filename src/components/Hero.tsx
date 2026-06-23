@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Award, Zap, Users, Sparkles, ChevronDown, MessageSquare } from 'lucide-react';
+import { Award, Zap, Users, Sparkles, ChevronDown, MessageSquare, Dumbbell } from 'lucide-react';
 
 export default function Hero() {
   const stats = [
@@ -25,20 +25,14 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark-950 pt-20"
       dir="rtl"
     >
-      {/* Background Image with Overlays */}
+      {/* Background with Overlays (No photos, purely aesthetic gold glow gradients) */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=1920"
-          alt="Premium luxury gym interior at Dose Gym"
-          className="w-full h-full object-cover scale-105 filter brightness-35 contrast-105"
-          referrerPolicy="no-referrer"
-        />
         {/* Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950/45" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/90 via-transparent to-dark-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/90 via-transparent to-dark-950/90" />
         {/* Gold Light Glow */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-luxury-gold/5 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-luxury-gold-dark/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-luxury-gold/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-luxury-gold-dark/15 rounded-full blur-[120px] pointer-events-none" />
       </div>
 
       {/* Hero Content */}
@@ -64,13 +58,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-8 flex flex-col items-center justify-center gap-3"
         >
-          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-luxury-gold shadow-[0_0_35px_rgba(212,175,55,0.35)] overflow-hidden">
-            <img
-              src="/dose_gym_logo_1782248414630.jpg"
-              alt="Dose Gym Logo"
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-dark-900 to-black rounded-none border-2 border-luxury-gold shadow-[0_0_25px_rgba(212,175,55,0.25)] flex items-center justify-center">
+            <Dumbbell className="h-10 w-10 sm:h-12 sm:w-12 text-luxury-gold transform -rotate-45" />
           </div>
           <span className="font-display text-4xl sm:text-6xl font-black tracking-tighter text-luxury-gold italic mt-2">
             DOSE<span className="text-white">GYM</span>

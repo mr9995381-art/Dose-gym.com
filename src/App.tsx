@@ -37,22 +37,14 @@ export default function App() {
             className="fixed inset-0 z-[9999] bg-dark-950 flex flex-col items-center justify-center"
           >
             <div className="text-center relative">
-              {/* Spinner logo ring */}
-              <div className="relative w-24 h-24 mb-6 mx-auto">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ repeat: Infinity, duration: 2.5, ease: "linear" }}
-                  className="absolute inset-0 border-4 border-dark-800 border-t-4 border-t-luxury-gold rounded-full"
-                />
-                <div className="absolute inset-2 rounded-full overflow-hidden">
-                  <img
-                    src="/dose_gym_logo_1782248414630.jpg"
-                    alt="Dose Gym Loading Logo"
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-              </div>
+              {/* Spinner dumbbell ring */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 1.8, ease: "linear" }}
+                className="w-24 h-24 border-4 border-dark-800 border-t-4 border-t-luxury-gold rounded-full flex items-center justify-center mb-6 mx-auto"
+              >
+                <Dumbbell className="h-8 w-8 text-luxury-gold transform -rotate-45" />
+              </motion.div>
               
               {/* Pulsing brand text */}
               <motion.h1
