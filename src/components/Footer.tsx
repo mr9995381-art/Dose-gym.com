@@ -183,7 +183,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 font-bold">
             <div className="w-10 h-10 rounded-full border-2 border-luxury-gold overflow-hidden">
               <img
-                src="/src/assets/images/dose_gym_logo_1782248414630.jpg"
+                src="/dose_gym_logo_1782248414630.jpg"
                 alt="Dose Gym Logo"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

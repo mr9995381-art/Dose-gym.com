@@ -46,7 +46,7 @@ export default function App() {
                 />
                 <div className="absolute inset-2 rounded-full overflow-hidden">
                   <img
-                    src="/src/assets/images/dose_gym_logo_1782248414630.jpg"
+                    src="/dose_gym_logo_1782248414630.jpg"
                     alt="Dose Gym Loading Logo"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

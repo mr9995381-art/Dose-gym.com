@@ -62,7 +62,7 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center gap-3">
             <div className="relative w-12 h-12 flex-shrink-0">
               <img
-                src="/src/assets/images/dose_gym_logo_1782248414630.jpg"
+                src="/dose_gym_logo_1782248414630.jpg"
                 alt="Dose Gym Logo"
                 className="w-full h-full object-cover rounded-full border-2 border-luxury-gold shadow-[0_0_15px_rgba(212,175,55,0.2)]"
                 referrerPolicy="no-referrer"

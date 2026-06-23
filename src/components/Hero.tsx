@@ -66,7 +66,7 @@ export default function Hero() {
         >
           <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-luxury-gold shadow-[0_0_35px_rgba(212,175,55,0.35)] overflow-hidden">
             <img
-              src="/src/assets/images/dose_gym_logo_1782248414630.jpg"
+              src="/dose_gym_logo_1782248414630.jpg"
               alt="Dose Gym Logo"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

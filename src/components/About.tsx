@@ -90,7 +90,7 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-none overflow-hidden shadow-2xl border-2 border-dark-800">
               <img
-                src="/src/assets/images/dose_gym_training_1782245477926.jpg"
+                src="/dose_gym_training_1782245477926.jpg"
                 alt="كابتن محمود المصري يدرب في دوز جيم"
                 className="w-full object-cover rounded-none transform hover:scale-102 transition-transform duration-500"
                 referrerPolicy="no-referrer"
