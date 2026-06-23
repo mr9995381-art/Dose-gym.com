@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Alexandria:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-display: 'Alexandria', sans-serif;
+  
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-gold-dark: #aa8410;
+  --color-luxury-gold-light: #f3e5ab;
+  
+  --color-dark-50: #f6f6f6;
+  --color-dark-100: #e7e7e7;
+  --color-dark-200: #d1d1d1;
+  --color-dark-300: #b0b0b0;
+  --color-dark-400: #888888;
+  --color-dark-500: #6d6d6d;
+  --color-dark-600: #5d5d5d;
+  --color-dark-700: #4f4f4f;
+  --color-dark-800: #262626;
+  --color-dark-900: #111111;
+  --color-dark-950: #000000;
+}
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: var(--color-dark-100);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars and sleek sharp styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-luxury-gold);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-gold-light);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e5ab 0%, #D4AF37 50%, #aa8410 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold-card {
+  background-color: #111111;
+  border: 1px solid #262626;
+  border-radius: 0px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bold-card:hover {
+  border-color: #D4AF37;
+}
+
+.bold-btn-primary {
+  background-color: #D4AF37;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.bold-btn-primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.bold-btn-secondary {
+  background-color: transparent;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+  font-weight: 700;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.bold-btn-secondary:hover {
+  background-color: #D4AF37;
+  color: #000000;
+}
+
+.bold-badge {
+  background-color: #D4AF37;
+  color: #000000;
+  font-weight: 900;
+  font-size: 0.75rem;
+  border-radius: 0px;
+}
+
+

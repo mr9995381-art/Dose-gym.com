@@ -1,0 +1,6 @@
+{
+  "name": "Dose Gym",
+  "description": "Premium luxury gym website with modern state-of-the-art equipment, professional coaches, and flexible packages in Bulaq ad Dakrur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
