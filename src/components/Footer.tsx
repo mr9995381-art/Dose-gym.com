@@ -202,11 +202,41 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Copyright details */}
+          {/* Small Copyright details */}
           <div className="text-xs text-dark-400 font-bold">
-            &copy; {new Date().getFullYear()} جميع الحقوق محفوظة لصالة <strong className="text-white">DOSE GYM</strong>. تحت إشراف كابتن محمود المصري.
+            تحت إشراف كابتن محمود المصري.
           </div>
 
+        </div>
+
+        {/* Absolute Bottom - Premium Developer Credits & Formal Copyright */}
+        <div className="mt-12 pt-8 border-t border-dark-900 text-center flex flex-col items-center justify-center">
+          <div className="text-luxury-gold opacity-60 tracking-widest text-lg font-black select-none max-w-md mx-auto">
+            ━━━━━━━━━━━━━━━━━━
+          </div>
+          
+          <div className="text-xs text-dark-400 font-bold tracking-wider my-2">
+            &copy; 2026 Dose Gym. All Rights Reserved.
+          </div>
+          
+          <a
+            href="https://wa.me/201146780736"
+            target="_blank"
+            rel="noreferrer"
+            className="group flex flex-col items-center gap-1.5 transition-colors cursor-pointer select-none py-1 px-4 border border-transparent hover:border-luxury-gold/10 hover:bg-dark-900/50"
+            title="تواصل مع المطور عمر أحمد"
+          >
+            <div className="text-sm font-black text-white group-hover:text-luxury-gold transition-colors flex items-center gap-1">
+              تصميم وتطوير <span className="text-luxury-gold underline underline-offset-4 decoration-luxury-gold/40">عمر أحمد</span>
+            </div>
+            <div className="text-xs text-luxury-gold/90 font-bold group-hover:text-white transition-colors">
+              واتساب: <span className="font-mono">01146780736</span>
+            </div>
+          </a>
+          
+          <div className="text-luxury-gold opacity-60 tracking-widest text-lg font-black select-none max-w-md mx-auto mt-2">
+            ━━━━━━━━━━━━━━━━━━
+          </div>
         </div>
 
       </div>
